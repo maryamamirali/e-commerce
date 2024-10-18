@@ -1,0 +1,526 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/*signup*/
+
+.signup-body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+
+.signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  width: 30%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+.signup-h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.signup-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup-butn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-butn:hover {
+  background-color: #45a049;
+}
+
+/*signin*/
+
+.signin-body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signin-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+.signin-form{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.signin-h2{
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.signin-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.input-wrapper .signin-input:focus {
+  outline: none;
+  border-bottom-color: #56ab2f;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #56ab2f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin-btn:hover {
+  background-color: #45a049;
+}
+
+/*product*/
+
+
+.product-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.product-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.products-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.products-wrapper input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.products-wrapper input:focus {
+  outline: none;
+  border-bottom-color: #56ab2f;
+}
+
+.products-wrapper label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  color: #999;
+}
+
+.products-wrapper input:focus ~ label,
+.products-wrapper input:valid ~ label {
+  top: -15px;
+  left: 0;
+  font-size: 12px;
+  color: #56ab2f;
+}
+
+.product-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #56ab2f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+  background-color: #45a049;
+}
+
+/*dashboard*/
+
+main .main-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+
+}
+
+.featured-product {
+  margin-bottom: 40px;
+
+}
+
+.featured-product h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 45%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 12px;
+
+}
+
+.product{
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.product-img {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+
+.product p {
+  color: #888;
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.product button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product button:hover {
+  background-color: #555;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h5{
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .product {
+      width: 100%;
+  }
+
+  .search-bar {
+      flex-direction: column;
+  }
+
+  .search-bar input, .search-bar button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
+
+/*component*/
+
+.box{
+  width: 10px;           
+  height: 10px;            
+  padding: 10px;            
+  margin: 10px;              
+  border: 2px solid #2c3e50; 
+  display: inline-block;    
+  vertical-align: top; 
+}
+
+.red{
+background-color: rgb(228, 81, 81);
+}
+
+.purple{
+background-color: rgb(171, 73, 171);
+}
+
+.pink{
+background-color: rgb(243, 170, 182);
+}
+
+.p{
+  width: 10px;           
+  height: 10px;            
+  padding: 10px;            
+  margin: 10px;              
+  display: inline-block;    
+  vertical-align: top; 
+
+}
+
+.clear-box {
+  width: 100px;
+  height:150px;
+  background-color: rgba(255, 255, 255, 0.3); /* White with 30% opacity */
+  border: 2px solid rgba(0, 0, 0, 0.5); /* Black border with 50% opacity */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+margin-left: 1100px;
+}
+
+/*detail*/
+
+
+.detail-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.product-image {
+  flex: 1 1 40%;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-info {
+    flex: 1 1 50%;
+}
+
+.product-info h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+.product-info .price {
+    color: #888;
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.product-info .description {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+.product-info .detail-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-info button:hover {
+    background-color: #555;
+}
+
+
+/*nav bar*/
+
+.boxes{
+  border: 2px solid black;
+  padding: 16px;
+  margin: 6px;
+  border-radius: 10px;
+}
+
+.boxes:hover {
+  transform: translateY(-5px);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav{
+background-color: #333;
+padding: 20px;
+display: flex;
+gap: 80px;
+}
+
+.nav a {
+  color: rgb(255, 255, 255);
+  margin: 0 15px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.singleproduct{
+padding: 8px;
+border-radius: 6px;
+background-color: #333;
+border: 1px solid white;
+
+
+}
+
+.singleproduct :hover {
+background-color: #212020;
+}
+
+
+.deletebtn{
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #333;
+  border: 1px solid white;
+
+  color: white;
+  }
+  
+  .deletebtn :hover {
+  background-color: #212020;
+  }
